@@ -20,3 +20,10 @@ def card_color(request):
         context['color'] = request.GET.get('color')
 
     return render(request, 'card_color.html', context)
+
+    def teble(request):
+    context = {}
+    lt = list(range(0, 106))
+    context["list"] = lt
+
+    return render(request, 'teble.html', context)
